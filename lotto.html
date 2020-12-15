@@ -1,7 +1,18 @@
 <html>
     <head>
+        <meta charset="UTF-8">
         <title>ตรวจสลากกินแบ่งรัฐบาล</title>
         <style>
+            #search{
+                border: 1px solid #000000;
+                padding: 10px;
+                margin-top: 10px;
+            }
+            .result-box{
+                margin-top: 10px;
+                padding: 10px;
+                background-color: #eeeeee;
+            }
             .font-size-18{
                 font-size: 18px;
             }
@@ -26,10 +37,38 @@
         </style>
     </head>
     <body class="text-center">
-        <h1 class="color-black font-size-22">ตรวจสลากกินแบ่งรัฐบาล</h1>
-        <p class="color-orange font-size-22">ผลสลากฯ งวด 1 ธ.ค. 2563</p>
-        <img src="https://s.isanook.com/sr/0/images/logo-sanook.svg">
-        <p class="color-black font-size-30">100994</p>
-        <p class="color-brown font-size-18">รางวัลที่ 1</p>
+        <div id="results">
+            <h1 class="color-black font-size-22">ตรวจสลากกินแบ่งรัฐบาล</h1>
+            <p class="color-orange font-size-22">ผลสลากฯ งวด 1 ธ.ค. 2563</p>
+            <img src="https://s.isanook.com/sr/0/images/logo-sanook.svg">
+            <p>
+                <a href="#search">ตรวจเลขสลาก</a>
+            </p>
+            <div class="result-box">
+                <p class="color-black font-size-30">100994</p>
+                <p class="color-brown font-size-18">รางวัลที่ 1</p>
+            </div>
+            <div class="result-box">
+                <p class="color-black font-size-30">123 456</p>
+                <p class="color-brown font-size-18">รางวัลเลขหน้า 3 ตัว</p>
+            </div>
+            <div class="result-box">
+                <p class="color-black font-size-30">789 012</p>
+                <p class="color-brown font-size-18">รางวัลเลขท้าย 3 ตัว</p>
+            </div>
+            <div class="result-box">
+                <p class="color-black font-size-30">88</p>
+                <p class="color-brown font-size-18">รางวัลเลขท้าย 2 ตัว</p>
+            </div>
+        </div>
+        <div id="search">
+            <h2 class="color-black font-size-22">ตรวจเลขสลาก</h2>
+            <p>
+                <input type="text" name="number1" placeholder="กรอกเลขสลาก">
+            </p>
+            <p>
+                <input type="submit" value="ตรวจเลย">
+            </p>
+        </div>
     </body>
 </html>
