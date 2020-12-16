@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>เพิ่มลบ ตัวเลข</title>
+        <style>
+            #results{
+                border: 1px solid #ff0000;
+            }
+            #search{
+                border: 1px solid #000000;
+                padding: 10px;
+                margin-top: 10px;
+            }
+            .result-box{
+                margin-top: 10px;
+                padding: 10px;
+                background-color: #eeeeee;
+            }
+            .font-size-18{
+                font-size: 18px;
+            }
+            .font-size-30{
+                font-size: 30px;
+            }
+            .font-size-22{
+                font-size: 22px;
+            }
+            .color-black{
+                color: black;
+            }
+            .color-orange{
+                color: orange;
+            }
+            .color-brown{
+                color: brown;
+            }
+            .text-center{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body class="text-center">
+        <h1 class="color-black font-size-18">เพิ่มลบ ตัวเลข</h1>
+        <h2 id="number" class="color-brown font-size-30">0</h2>
+        <p>
+            <button onclick="manage.add()">เพิ่ม</button>
+        </p>
+        <p>
+            <button onclick="manage.reduce()">ลบ</button>
+        </p>
+    </body>
+    <script>
+        var number = 0
+        var manage = {
+            add: function (){
+                var num = number + 1
+                number = num
+                document.getElementById('number').innerHTML = number
+            },
+            reduce: function (){
+                var num = number - 1
+                number = num
+                document.getElementById('number').innerHTML = number
+            },
+        }
+    </script>
+</html>
