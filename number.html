@@ -57,8 +57,10 @@
         var manage = {
             add: function (){
                 var number = document.getElementById('number').value
-                numbers.push(number)
-                displayNumbers()
+                if(number > 10000){
+                    numbers.push(number)
+                    displayNumbers()
+                }
             },
             reduce: function (){
                 numbers.splice(-1,1)
